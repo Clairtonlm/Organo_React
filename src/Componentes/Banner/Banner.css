@@ -1,0 +1,10 @@
+/*  Style Banner*/
+.banner{
+    background-color: #6278f7;
+    text-align: center;
+
+}
+/* Imagem responsiva */
+.banner img{
+    max-width: 100%;
+}
