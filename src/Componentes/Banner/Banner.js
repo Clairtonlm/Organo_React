@@ -1,6 +1,8 @@
 //
 import './Banner.css'
-const Banner = ()=>{
+
+
+ const Banner = ()=>{
     //JSX--> como js trabalha a parte visual
     return(
         <>

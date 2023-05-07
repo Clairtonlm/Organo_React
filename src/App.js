@@ -1,11 +1,15 @@
 
 
-import Banner from './Componentes/Banner/Banner';
+import Banner from './Componentes/Banner/Banner.js';
+import CampoTexto from './Componentes/CampoTexto';
 
 function App() {
   return (
     <div className="App">
       <Banner/>
+      <CampoTexto label="Nome"/>
+      <CampoTexto label="Cargo"/>
+      <CampoTexto label="Imagem"/>
       
     </div>
   );
