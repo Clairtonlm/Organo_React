@@ -1,4 +1,4 @@
-import Botao from "../Botaao";
+import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 
@@ -26,6 +26,7 @@ const Formulario = ()=>{
             <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem"/>
             <ListaSuspensa label="Time" itens={times}/>
             <Botao texto="Criar Card"/>
+            
             </form>
         </section>
     )
