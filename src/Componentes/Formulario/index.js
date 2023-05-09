@@ -6,7 +6,7 @@ import ListaSuspensa from "../ListaSuspensa";
 //Style
 import "./Formulario.css"
 
-const Formulario = ()=>{
+const Formulario = (props)=>{
 
     const times = [
         'Programação',
@@ -28,7 +28,12 @@ const Formulario = ()=>{
 
     const aoSalvar = (evento)=>{
         evento.preventDefault();
-        console.log("Formulário foi enviado com sucesso =>", nome, cargo, imagem, time)
+       props.aoColaboradorCadastrado({
+        nome,
+        cargo,
+        imagem,
+        time
+       })
     }
 
     return(
