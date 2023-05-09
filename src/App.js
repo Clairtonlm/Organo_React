@@ -7,6 +7,44 @@ import Time from './Componentes/Time/index.js';
 
 function App() {
 
+  const times = [
+    {
+      nome:  'Programação',
+      corprimaria: '#57c278',
+      corSecundaria: '#d9f7e9'
+    },
+    {
+      nome: 'Front-End',
+      corprimaria: '#82CFFA',
+      corSecundaria: '#D8F8FF'
+    },
+    {
+      nome:  'Back-End',
+      corprimaria: '#A6D157',
+      corSecundaria: '#F0F8E2'
+    },
+    {
+      nome: 'Data Science',
+      corprimaria: '#E06869',
+      corSecundaria: '#FD37E8'
+    },
+    {
+      nome:  'Devops',
+      corprimaria: '#D86EBF',
+      corSecundaria: '#FAE9F5'
+    },
+    {
+      nome: 'Ux e Design',
+      corprimaria: '#FFBA05',
+      corSecundaria: '#FFF5D9'
+    },
+    {
+      nome: 'Gestão',
+      corprimaria: '#FFBAD5',
+      corSecundaria: '#FFEEDF'
+    },
+  ]
+
 const [colaboradores, setColaboradores] = useState([])
 
 const aoNovoColaboradorAdicionado = (colaborador)=>{
@@ -18,14 +56,11 @@ const aoNovoColaboradorAdicionado = (colaborador)=>{
     <div className="App">
       <Banner/>
       <Formulario aoColaboradorCadastrado = {colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
-      <Time nome="Programação"/>
-      <Time nome="Front_end"/>
-      <Time nome="back-end"/>
-      <Time nome="Data Science"/>
-      <Time nome="Devops"/>
-      <Time nome="Ux e Designer"/>
-      <Time nome="Gestao"/>
       
+      {times.map(time => <Time key={time.nome} nome={time.nome} corprimaria={time.corprimaria} corSecundaria={time.corSecundaria}/>)}
+      
+     
+     
       
     </div>
   );
