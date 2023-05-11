@@ -63,7 +63,7 @@ const aoNovoColaboradorAdicionado = (colaborador)=>{
           nome={time.nome} 
           corprimaria={time.corprimaria} 
           corSecundaria={time.corSecundaria}
-          colaboradores={colaboradores}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
           
           />)}
       
