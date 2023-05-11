@@ -1,3 +1,4 @@
+import Colaborador from '../Colaborador';
 import'./Time.css'
 
 const Time = (propos)=>{
@@ -5,6 +6,8 @@ const Time = (propos)=>{
     return (
         <section className='time' style={css}>
             <h3 style={{ borderColor: propos.corprimaria}}>{propos.nome}</h3>
+            <Colaborador/>
+            <Colaborador/>
         </section>
     )
 }
